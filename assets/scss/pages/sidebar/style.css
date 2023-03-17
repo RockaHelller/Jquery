@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: magenta;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.hide {
+  transform: translateX(-250px);
+}
+
+i {
+  position: absolute;
+  top: 30px;
+  left: 280px;
+}
+
+ul {
+  padding-top: 40px;
+}/*# sourceMappingURL=style.css.map */

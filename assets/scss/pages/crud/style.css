@@ -1,0 +1,10 @@
+input {
+  outline: none !important;
+}
+
+input.form-control:focus,
+input.form-control:active {
+  outline: none !important;
+  border-color: black;
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */

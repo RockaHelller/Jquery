@@ -1,0 +1,60 @@
+body {
+    background-color: grey;
+}
+
+.slider {
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+    .arrow {
+        position: absolute;
+        z-index: 2;
+        top: 200px;
+        color: white;
+
+    }
+
+    .left {
+        left: 160px;
+    }
+
+    .right {
+        right: 160px;
+    }
+
+    .image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80%;
+            height: 400px;
+            position: absolute;
+            opacity: 0;
+
+        }
+    }
+
+
+
+
+
+
+}
+
+.active-img {
+    opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
