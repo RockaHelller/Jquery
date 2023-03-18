@@ -143,3 +143,15 @@ deleteAllButton.addEventListener("click", function (e) {
 
 
 
+let deleteButton = document.querySelectorAll(".fa-trash")
+
+deleteButton.forEach(deletItem => {
+  deletItem.addEventListener("click", function (e) {
+    let id = this.parentNode.parentNode.firstElementChild.innerText
+    let students = JSON.parse(localStorage.getItem("database"))
+    console.log(students);
+    let result = students.filter(m => m.number != id)
+    localStorage.setItem("database", JSON.stringify(result))
+    this.parentNode.parentNode.remove()
+  })
+});
